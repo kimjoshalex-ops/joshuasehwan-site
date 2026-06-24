@@ -5,43 +5,67 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Joshua Sehwan Kim">
   <main class="container">
 
-    <img src="/ENTANGLEMENT-COVER.jpeg" alt="Entanglement cover" class="headshot" />
+    <img src="/ENTANGLEMENT-COVER.jpeg" alt="Entanglement cover" class="cover" />
 
-    <h1>Entanglement</h1>
+    <header class="header">
+      <h1>Entanglement</h1>
+      <p class="tagline">A graphic novel by Joshua Sehwan Kim & Ciara Ni Chuirc (2026)</p>
+    </header>
 
-    <p class="tagline">
-      2026 – A new graphic novel with Ciara Ni Chuirc
-    </p>
+    <section class="intro">
+      <p>
+        Entanglement is a graphic novel exploring memory, identity, and the quiet collapse of distance between two people.
+      </p>
+    </section>
 
-    <p>
-      Welcome to my official website.
-    </p>
+    <section class="meta">
+      <p>More updates coming soon.</p>
+    </section>
 
   </main>
 </Layout>
 
 <style>
   .container {
-    max-width: 700px;
-    margin: 60px auto;
-    padding: 20px;
+    max-width: 720px;
+    margin: 80px auto;
+    padding: 24px;
     text-align: center;
+    font-family: system-ui, -apple-system, sans-serif;
   }
 
-  .headshot {
-    width: 250px;
+  .cover {
+    width: 260px;
     max-width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+
+  .header {
+    margin-top: 28px;
   }
 
   h1 {
-    font-size: 2.8rem;
-    margin-top: 30px;
+    font-size: 3rem;
+    margin: 18px 0 6px;
+    letter-spacing: -0.02em;
   }
 
-  .tagline,
-  p {
-    line-height: 1.7;
+  .tagline {
     font-size: 1.1rem;
+    opacity: 0.75;
+    margin-bottom: 30px;
+  }
+
+  .intro {
+    margin-top: 20px;
+    font-size: 1.15rem;
+    line-height: 1.8;
+  }
+
+  .meta {
+    margin-top: 40px;
+    font-size: 0.95rem;
+    opacity: 0.6;
   }
 </style>
